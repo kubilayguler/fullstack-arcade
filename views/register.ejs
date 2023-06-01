@@ -1,0 +1,25 @@
+<%- include('partials/_header') %>
+<body>
+    <div class="title">
+        <h1>Register Page</h1>
+    </div>
+          <form id="request" action="users/register" method="POST">
+            <div class="form-group">
+                <label class="h4" for="exampleInputUsername">Username</label>
+                <input type="text" class="form-control" name="username" id="exampleInputUsername" placeholder="Enter Username">
+              </div>
+            <div class="form-group">
+              <label class="h4" for="exampleInputEmail1">Email address</label>
+              <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+            </div>
+            <div class="form-group">
+              <label class="h4" for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" name="password" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <button type="submit" class="btn btn-warning">Sign in</button>
+          </form>
+          <div class="already">
+            <a href="/login"><h5>Do you have already an account?</h5></a>
+          </div>
+</body>
+</html>

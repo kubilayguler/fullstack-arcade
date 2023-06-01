@@ -1,0 +1,19 @@
+<%- include('partials/_header')%>
+<body>
+    <div class="navbar">
+        <nav>
+            <ul>
+            <li><a href="/"><h1>Home</h1></a></li>
+            <li><h1>|</h1></li>
+            <li><a href="/register"><h1>Register</h1></a></li>
+            <li><h1>|</h1></li>
+            <li><a href="/login"><h1>Login</h1></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="title">
+        <h2>Welcome <%= user.username %></h2>
+        <h2>Email: <%= user.email %></h2>
+    </div>
+</body>
+</html>
